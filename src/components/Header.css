@@ -3,13 +3,13 @@ header {
   background-color: #8724b4;
   padding: 1rem;
   color: white;
-  display: flex;
+  display: grid;
   justify-content: space-between;
   align-items: center;
 }
 
 nav {
-  display: flex;
+  display: grid;
   gap: 1rem; 
 }
 
