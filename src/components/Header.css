@@ -1,63 +1,26 @@
-/* Estilos generales */
-body {
-  font-family: 'Arial', sans-serif;
-  background-color: #0e1a2d; /* Fondo oscuro como el espacio */
-  color: #fff; /* Texto blanco para mejor contraste */
-  margin: 0;
-  padding: 0;
-}
 
-/* Contenedor principal */
-.container {
+header {
+  background-color: #8724b4;
+  padding: 1rem;
+  color: white;
   display: flex;
-  flex-wrap: wrap; /* Permite que las tarjetas se ajusten a la pantalla */
-  justify-content: center; /* Centra las tarjetas en la página */
-  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* Estilo de cada tarjeta */
-.card {
-  background-color: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente para las tarjetas */
-  border-radius: 10px; /* Bordes redondeados */
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra de la tarjeta */
-  margin: 15px; /* Espaciado entre tarjetas (aumentado para más separación) */
-  padding: 15px; /* Espaciado interno */
-  width: calc(100% - 30px); /* Ajusta el tamaño de las tarjetas en móviles */
-  max-width: 300px; /* Ancho máximo para las tarjetas */
-  transition: transform 0.2s; /* Suaviza la transición al hacer hover */
+nav {
+  display: flex;
+  gap: 1rem; 
 }
 
-/* Efecto hover para las tarjetas */
-.card:hover {
-  transform: scale(1.05); /* Aumenta ligeramente el tamaño de la tarjeta al pasar el ratón */
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
 
-/* Estilo del título de cada cuerpo celeste */
-.card h2 {
-  margin: 0;
-  font-size: 1.5em; /* Tamaño del título */
-}
-
-/* Estilo para la descripción */
-.card p {
-  font-size: 0.9em; /* Tamaño de la descripción */
-  margin-top: 10px; /* Espacio superior */
-}
-
-/* Estilo para el enlace de detalles */
-.card a {
-  display: inline-block; /* Permite aplicar margen */
-  margin-top: 15px; /* Espacio superior */
-  color: #00aaff; /* Color azul claro para el enlace */
-  text-decoration: none; /* Sin subrayado */
-  border: 1px solid #00aaff; /* Borde azul */
-  padding: 5px 10px; /* Espaciado interno del enlace */
-  border-radius: 5px; /* Bordes redondeados */
-  transition: background-color 0.2s; /* Suaviza la transición de fondo */
-}
-
-/* Efecto hover para el enlace */
-.card a:hover {
-  background-color: #00aaff; /* Cambia el fondo a azul al hacer hover */
-  color: white; /* Texto blanco */
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2); 
 }
